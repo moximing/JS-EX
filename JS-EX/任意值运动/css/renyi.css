@@ -1,0 +1,18 @@
+#div1,#div2{
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 10px;
+	border: 5px solid black;
+}
+#div3{
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	/*filter:alpha(opacity:30);*/
+	float: left;
+	border: 5px solid black;
+	opacity: 0.3;
+}

@@ -1,0 +1,66 @@
+<!-- <!doctype html>
+<html>
+<head>
+<title>随机显示文字</title>
+<meta charset='utf-8'>
+</head>
+
+<body>
+	<div id="div1"></div>
+
+	<script language="javascript">
+	var arr=new Array("<h2>今日新闻:<h2/>马航客机失联45天.","<h2>今日新闻:<h2/>韩国客轮沉没16天","<h2>今日新闻:<h2/>源码爱好者欢迎您.","<h2>今日新闻:<h2/>杭州西湖-印象西湖上演.");
+	div1.style.backgroundColor="#CCFF00";
+	div1.style.width="200px";
+	div1.style.height="130px";
+	div1.style.visibility="hidden";
+	div1.style.position="absolute"
+	function text(){
+		var n=Math.floor(Math.random()*3);
+		div1.style.visibility="visible";
+		div1.innerHTML="<p>"+arr[n]+'<p/>';
+		div1.style.width="200px";
+		div1.style.height="130px";
+	}
+	setInterval("text()",1000);
+	</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>JavaScript随机显示文字</title>
+<style type="text/css">
+#login {
+    display: none;
+}
+</style>
+<script type="text/javascript">
+    var quotes = [
+            '注重学习和交流', '分手大师', '精品源码下载', '今天天气很好', '你是我的唯一吗？', '为什么相爱的人不能在一起？', '我的天啊', '亲亲我的宝贝', '啦啦啦德玛西亚', '终于看到我啦'
+    ];
+    document.write (quotes[Math.floor (Math.random () * quotes.length)]);
+    var rand = function ()//有问题，得去掉前面显示的一个句子！！！！！！
+    {
+        var btn = document.getElementById ('btn');
+        var str = quotes[Math.floor (Math.random () * quotes.length)];
+        if (!this.txt)
+        {
+            this.txt = document.createTextNode (str);
+            document.body.insertBefore (this.txt, btn);
+        }
+        else
+        {
+            this.txt.nodeValue = str;    
+        }
+    }
+</script>
+</head>
+
+<body style="text-align: center;">
+    <input id="btn" type="button" value="test" onclick="rand();" />
+</body>
+</html>

@@ -1,0 +1,10 @@
+#div1{
+	width: 100px;height: 100px;
+	background: #aff;
+	position: absolute;
+}
+
+.box{
+	border:1px dashed black;
+	position: absolute;
+}

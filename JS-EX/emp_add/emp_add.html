@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<title>emp_add.htm</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/form.css">
+<script type="text/javascript" src="js/emp_add.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+</head>
+
+<body>
+	<form id="empForm">	
+		<table id="tabl" border=1px width=80% cellpadding="5" style="text-align:center" bgcolor="#F2F2F2">
+			<tr id="empTr">
+				<th colspan="3">职工信息表</th>
+			</tr>
+			<tr id="empTr">
+				<td width=10%>职工编号</td>
+				<td width=70%><input type="text" name="empnum" id="empnum" class="init"/></td>
+				<td width=20%><span id="empnumspan"></span></td>
+			</tr>
+			<tr id="empTr">
+				<td>职工姓名</td>
+				<td><input type="text" name="empname" id="empname" class="init"/></td>
+				<td><span id="empnamespan"></span></td>
+			</tr>
+			<tr id="empTr">
+				<td>职工职位</td>
+				<td><input type="text" name="empjob" id="empjob" class="init"/></td>
+				<td><span id="empjobspan"></span></td>
+			</tr>
+			<tr id="empTr">
+				<td>雇佣日期</td>
+				<td><input type="text" name="hiredate" id="hiredate" class="init"/></td>
+				<td><span id="hiredatespan"></span></td>
+			</tr>
+			<tr id="empTr">
+				<td>基本工资</td>
+				<td><input type="text" name="sal" id="sal" class="init"/></td>
+				<td><span id="salspan"></span></td>
+			</tr>
+			<tr id="empTr">
+				<td>佣金</td>
+				<td><input type="text" name="comm" id="comm" class="init"/></td>
+				<td><span id="commspan"></span></td>
+			</tr>
+			<tr id="empTr">
+				<td colspan="3">
+					<input type="submit" value="增加">
+					<input type="reset" value="重置">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

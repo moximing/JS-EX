@@ -1,0 +1,61 @@
+<!DOCTYPE>
+<html>
+<meta charset='utf-8'>
+<head>
+<title>??</title>
+<style type="text/css">
+	ul{
+		background-color: #aff;
+		height: 400px;
+		width: 280px;
+		overflow: hidden;
+		position: relative;
+		/*top: 0;
+		left: 0;*/
+		z-index: 0;
+		
+	}
+	li{
+		background-color: #aaa;
+		height: 100px;
+		width: 200px;
+		margin: auto 10px;
+		overflow: hidden;
+		position: absolute;
+		top: 100;
+		left: 30;
+		z-index: 0;
+	}
+</style>
+
+<script type="text/javascript">
+	window.onload=function(){
+		var aLi=document.getElementsByTagName('li');
+
+		for (var i = 0; i < aLi.length; i++) {	//怎么用公式表达，第3个之后的变化？？？
+			if(i<2){
+				aLi[i].style.webkitTransform="matrix(0.8, -0.2, 0, 0.8, 60, -10)";
+				aLi[i].style.backgroundColor="#a11"
+			}else if(i>2){
+				aLi[i].style.webkitTransform="matrix(0.8, 0.2, 0, 0.8, -60, -10)";
+				aLi[i].style.backgroundColor="#aa1"
+			}else{
+				aLi[i].style.zIndex="20";
+			}
+			
+		};
+	}
+</script>
+
+<body>
+	<div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

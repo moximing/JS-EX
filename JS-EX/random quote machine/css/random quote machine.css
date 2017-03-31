@@ -1,0 +1,47 @@
+*{
+  margin:0px;padding:0px;
+}
+body{
+  background-color:#00aaff;
+}
+.box{
+  background-color:#fff;
+  width:600px;  
+  margin:auto;
+/*   margin-top:100px; */
+}
+.btn{
+  clear: both;
+}
+.text{
+  padding:20px;
+}
+.author{
+  float:right;
+  margin:20px;
+}
+img{
+  margin:30px;
+  
+  width:35px;
+}
+button{
+  float:right;
+  margin:30px;
+  background-color:#00aaff;
+  width:100px;height:35px;
+  border:none;
+}
+a{
+  text-decoration:none;
+  fonf:bold 16px Times;
+  color:#fff;
+}
+#txt{
+  font:bold 32px French Script MT;
+  color:#00aaff;
+}
+#au{
+  font:bold 16px BrockScript;
+  color:#00aaff;
+}

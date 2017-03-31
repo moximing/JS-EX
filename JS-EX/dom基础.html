@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+<meta charset='utf-8'>
+<head>
+<title>JS面向对象基础</title>
+<script type="text/javascript">
+function User(name,num){	//构造函数加属性
+	// //原料
+	// var obj=new Object();
+	//加工
+	this.name=name;
+	this.address=num;
+
+	// //出厂
+	// return obj;
+}
+
+User.prototype.showName=function(){		//原型加方法
+	alert('the name is : '+this.name);
+}
+User.prototype.showAddr=function(){
+	alert('the address is : '+this.address);
+}
+var obj1=new User('sherlock Holmes','221B BackerStreet');
+var obj2=new User('John Waston','221B BackerStreet');
+
+obj1.showName();
+obj1.showAddr();
+
+obj2.showName();
+obj2.showAddr();
+
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

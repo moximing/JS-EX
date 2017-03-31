@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		* {
+			    padding: 0;
+			    margin: 0;
+		}
+		.top{
+			width: 100%;
+			height: 200px;
+			background-color: #34f332;
+		}
+		.box{
+			width: 800px;
+			height: 300px;
+			float: right;
+		}
+		#floor1{
+			background-color: #555;
+		}
+		#floor2{
+			background-color: #d63900; 
+		}
+		#floor3{
+			background-color: red;
+		}
+		#floor4{
+			background-color: black;
+		}
+		#floor5{
+			background-color: orange;
+		}
+		#floor6{
+			background-color: blue; 
+		}
+		#floor7{
+			background-color: pink; 
+		}
+
+		.rightNavBar{
+			/*float: left;*/
+			/*display: block;*/
+			width: 39px;
+			height: 396px;
+			position: fixed;
+			bottom: 0px;
+			left: 50%;
+			margin-left: -660px;
+			display: none;
+		}
+		.rightNavBar ul li{
+			list-style: none;
+			width: 39px;
+			height: 32px;
+		}
+		.rightNavBar ul li a{
+			width: 39px;
+			height: 31px;
+			font-size: smaller;
+			/*padding: 1px 0px 0px 9px;*/
+			margin-top: 1px;
+			/*display: none;*/
+			background: url("https://www.lezhi365.com.cn/web/templates/default/images/home-nav-icon.png") no-repeat;
+		}	
+
+		.rightNavBar ul li a.navbar1{
+			background-position: 0 0px;
+		}
+		.rightNavBar ul li a.navbar2{
+			background-position: 0 -34px;
+		}
+		.rightNavBar ul li a.navbar3{
+			background-position: 0 -68px;
+		}
+		.rightNavBar ul li a.navbar4{
+			background-position: 0 -102px;
+		}
+		.rightNavBar ul li a.navbar5{
+			background-position: 0 -136px;
+		}
+		.rightNavBar ul li a.navbar6{
+			background-position: 0 -170px;
+		}
+		.rightNavBar ul li a.navbar7{
+			background-position: 0 -204px;
+		}
+		li.active a{
+			line-height: 16px;
+			float: left;
+			margin: 0;
+			font-weight: bold;
+		}
+		body{
+			position: relative;
+		}
+		.addLive1{
+			background: url("https://www.lezhi365.com.cn/web/templates/default/images/home-nav-icon-hover.png") no-repeat;
+			/*background-position: 0 0px;*/
+		}
+		.addLive2{
+			background: url("https://www.lezhi365.com.cn/web/templates/default/images/home-nav-icon-hover.png") no-repeat;
+			/*background-position: 0 -34px;*/
+		}
+		.addLive3{
+			background: url("https://www.lezhi365.com.cn/web/templates/default/images/home-nav-icon-hover.png") no-repeat;
+			/*background-position: 0 -68px;*/
+		}
+		.addLive4{
+			background: url("https://www.lezhi365.com.cn/web/templates/default/images/home-nav-icon-hover.png") no-repeat;
+			/*background-position: 0 -102px;*/
+		}
+		.addLive5{
+			background: url("https://www.lezhi365.com.cn/web/templates/default/images/home-nav-icon-hover.png") no-repeat;
+			/*background-position: 0 -136px;*/
+		}
+		.addLive6{
+			background: url("https://www.lezhi365.com.cn/web/templates/default/images/home-nav-icon-hover.png") no-repeat;
+			/*background-position: 0 -170px;*/
+		}
+		.addLive7{
+			background: url("https://www.lezhi365.com.cn/web/templates/default/images/home-nav-icon-hover.png") no-repeat;
+			/*background-position: 0 -204px;*/
+		}
+	</style>
+	<script type="text/javascript" src="../jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="move.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var timer;
+			function  startMove( ) {
+				clearInterval(timer);
+				timer=setInterval(function(){
+					var x=$(window).scrollTop();
+					if(x>100){
+						$("#myScrollspy").css("display","block");
+					}else{
+						$("#myScrollspy").css("display","none");
+						// $("#myScrollspy").find("a").css("display","none");
+					}
+					// if (x<100) {
+					// 	$("#myScrollspy").find("a").css("display","none");
+					// }else
+					 if (250>x&&x>100) {
+						$("#myScrollspy").find("a.navbar1").addClass("addLive1");
+					}else if (400>x&&x>250) {
+						$("#myScrollspy").find("a.navbar2").addClass("addLive2");
+					}else if (700>x&&x>400) {
+						$("#myScrollspy").find("a.navbar3").addClass("addLive3");
+					}else if (1000>x&&x>700) {
+						$("#myScrollspy").find("a.navbar4").addClass("addLive4");
+					}else if (1300>x&&x>1000) {
+						$("#myScrollspy").find("a.navbar5").addClass("addLive5");
+					}else if (1600>x&&x>1300) {
+						$("#myScrollspy").find("a.navbar6").addClass("addLive6");
+					}else if (x>1600) {
+						$("#myScrollspy").find("a.navbar7").addClass("addLive7");
+					}
+				},30);
+			}
+			startMove();
+
+
+
+			
+			// $("#floor7").on("click",function(){
+			// 	$('html,body').animate({
+			// 	scrollTop: $('#floor7').eq(index).offset().top - 20 + 'px'
+			// 	}, 500);
+			// });
+			$("#floor7").on("mouseout",function() {
+				  if ($(this).hasClass('active')) {
+				    return;
+				  } else {
+				    $(this).addcss();
+				  }
+			});
+			$("#floor7").on("mouseover",function() {
+				  if ($(this).hasClass('active')) {
+				    return;
+				  } else {
+				    $(this).addcss("addLive");
+				  }
+			});
+			
+		})
+		
+	</script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+	<div class="top"></div>
+	<div class="rightNavBar" id="myScrollspy">
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a class="navbar1" href="#floor1">冰酒系列</a></li>
+			<li><a class="navbar2" href="#floor2">富氢水机</a></li>
+			<li><a class="navbar3" href="#floor3">家居家纺</a></li>
+			<li><a class="navbar4" href="#floor4">个护化妆</a></li>
+			<li><a class="navbar5" href="#floor5">紫砂系列</a></li>
+			<li><a class="navbar6" href="#floor6">空气治理</a></li>
+			<li><a class="navbar7" href="#floor7">铁皮石斛</a></li>
+		</ul>
+	</div>
+	<div id="floor1" class="box"></div>
+	<div id="floor2" class="box"></div>
+	<div id="floor3" class="box"></div>
+	<div id="floor4" class="box"></div>
+	<div id="floor5" class="box"></div>
+	<div id="floor6" class="box"></div>
+	<div id="floor7" class="box"></div>
+</body>
+</html>
+

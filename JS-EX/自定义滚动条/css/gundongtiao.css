@@ -1,0 +1,26 @@
+#parent{
+	width: 500px;height: 20px;
+	background: #777;
+	position: relative;
+}
+#div1{
+	width:20px;height: 20px;
+	background: #3cf;
+	position: absolute;
+}
+#div2{
+	width: 0px;height: 0px;
+	background: #afa;
+	filter:alpha(opacity:0);
+	opacity: 0;
+}
+#div3{
+	width: 600px;height: 150px;
+	border: 1px solid black;
+	position: relative;
+	overflow: hidden;
+}
+#div4{
+	position: absolute;
+	padding: 5px;
+}

@@ -1,0 +1,12 @@
+#div1{
+	width: 100px;height: 100px;
+	background-color: red;
+	position: absolute;
+}
+.line{
+	width: 1px;height: 500px;
+	background-color:#000;
+	position: absolute;
+	top: 0px;
+	left: 300px;
+}

@@ -1,0 +1,11 @@
+#div1{
+	width: 400px;height: 400px;
+	background: #999;
+	position: absolute;
+}
+
+#div2{
+	width: 100px;height: 100px;
+	background: #aff;
+	position: absolute;
+}

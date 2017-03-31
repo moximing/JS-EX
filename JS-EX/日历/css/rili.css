@@ -1,0 +1,22 @@
+table{
+	background-color: #333;
+	color: #fff;
+}
+table,th,td{
+	/*margin:auto;*/
+	border:1px solid black;
+	border-spacing:5px;
+}
+td{
+	padding:10px;
+	vertical-align:center;
+	text-align:center;
+	background-color:#aaa;
+}
+th{
+	border: none;
+}
+.active{
+	background-color:#000;
+}
+

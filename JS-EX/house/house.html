@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>房贷计算器</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/house.js"></script>
+</head>
+
+<body>
+	<div id="inputDiv">
+		<table border=1 width=100%>
+			<th colspan=3>房贷计算器</th>
+			<tr id="divTr">
+				<td>平米单价：</td>
+				<td><input id="cost" name="cost" type="txt" class="init"/></td>
+				<td><span id="costSpan">请输入单价/平米</span></td>
+			</tr>
+			<tr id="divTr">
+				<td>租金：</td>
+				<td><input id="rent" name="rent" type="txt" class="init"/></td>
+				<td><span id="tdSpan">请输入租金/平米</span></td>
+			</tr>
+			<tr id="divTr">
+				<td>物业费：</td>
+				<td><input id="charge" name="charge" type="txt" class="init"/></td>
+				<td><span id="chargeSpan">请输入物业费/平米/月</span></td>
+			</tr>
+			<tr id="divTr">
+				<td>面积：</td>
+				<td><input id="area" name="area" type="txt" class="init"/></td>
+				<td><span id="areaSpan">请输入面积</span></td>
+			</tr>
+			<tr id="divTr">
+				<td id="firstPay">首付比例：</td>
+				<td>
+					<select>
+						<option value ="10%">10%</option>
+  						<option value ="20%">20%</option>
+ 						<option value ="30%">30%</option>
+					  	<option value ="40%" selected>40%</option>
+					</select>
+				</td>
+				<td><span id="firstPaySpan">请输入首付比例</span></td>
+			</tr>
+			<tr id="divTr">
+				<td>贷款利息：</td>
+				<td><input id="loan" name="loan" type="txt" class="init"/></td>
+				<td><span id="loanSpan">请输入贷款利息</span></td>
+			</tr>
+		</table>
+	</div>
+		
+	<div id="butDiv">
+		<button id="calBut">计算</button>
+		<button id="resetBut">重置</button>
+	</div>
+
+	<div id="calDiv">
+		<div>首付金额：<span id="costResult"></span></div>
+		<div>贷款总额：<span id="loanResult"></span></div>
+		<div>每月支付利息：<span id="payResult"></span></div>
+		<div>每月租金：<span id="rentResult"></span></div>
+		<div>每月物业费：<span id="chargeResult"></span></div>
+	</div>
+</body>
+
+</html>

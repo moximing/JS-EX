@@ -1,0 +1,18 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#div1{
+	width: 100px;height: 200px;
+	background-color: #ccc;
+	position: absolute;
+	left: -100px;
+}
+span{
+	width: 30px;height: 60px;
+	background-color: #ccf;
+	position: absolute;
+	right: -30px;
+	text-align: center;
+	line-height: 20px;
+}

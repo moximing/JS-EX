@@ -1,0 +1,33 @@
+*{
+	margin: 0;padding :0;
+}
+#div1{
+	width: 712px;
+	height: 108px;
+	background-color: red;
+	margin:100px auto;
+	position: relative;
+	overflow: hidden;
+}
+ul{
+	position: absolute;
+}
+li{
+	list-style: none;
+	float: left;
+}
+#div2{ 
+	width: 68px;height: 68px;
+	background: url(../imgs/btn.jpg) no-repeat -68px 0px;
+	position: relative;
+	left: 178px;
+	top: 257px;
+}
+#div3{ 
+	width: 68px;height: 68px;
+	background: url(../imgs/btn.jpg) no-repeat 0px 0px;
+	position: relative;
+	left: 1100px;
+	top: 190px;
+}
+
